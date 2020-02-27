@@ -1,2 +1,2 @@
 # Big-Data-Exercise
-This is my own exercise answer which is based on 
+This is my own answer to bd-sp-2017 exercise

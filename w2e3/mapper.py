@@ -12,6 +12,6 @@ for line in sys.stdin:
     words = line.split()
     for index in range(0, int(len(words) / 5)):
         key = words[index * 5] + '-' + words[index * 5 + 1]
-        value = words[index * 5 + 2] + '-' + words[index * 5 + 3] + '-' + words[index * 5 + 4]
+        value = words[index * 5 + 2] + ',' + words[index * 5 + 3] + ',' + words[index * 5 + 4]
 
         print('%s\t%s\t%s' % (key, value, filename))

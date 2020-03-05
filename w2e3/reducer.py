@@ -17,9 +17,9 @@ for line in sys.stdin:
         # by key (here: word) before it is passed to the reducer
         if current_key == key:
             if label == "heathrowdata.txt":
-                current_value = current_value + '-' + value
+                current_value = current_value + '|' + value
             elif label == "wickairportdata.txt":
-                current_value = value + '-' + current_value
+                current_value = value + '|' + current_value
         else:
             if current_key:
                 # write result to STDOUT

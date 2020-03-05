@@ -28,10 +28,10 @@ for line in sys.stdin:
         else:
                 if current_key:
                         # write result to STDOUT
-                        print '%s\t%s' % (current_key, current_count)
+                        print('%s\t%s' % (current_key, current_count))
                 current_count = count
                 current_key = key
 
 # do not forget to output the last word if needed!
 if current_key == key:
-        print '%s\t%s' % (current_key, current_count)
+        print('%s\t%s' % (current_key, current_count))

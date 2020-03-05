@@ -5,4 +5,4 @@ import sys
 for line in sys.stdin:
         # remove leading and trailing whitespace
         line = line.strip()
-       	print '%s\t%s' % (len(line), 1)
+        print('%s\t%s' % (len(line), 1))

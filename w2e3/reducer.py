@@ -26,3 +26,4 @@ for line in sys.stdin:
         # do not forget to output the last word if needed!
 if current_key == key:
     print('%s\t%s' % (current_key, current_value))
+    

@@ -16,9 +16,9 @@ for line in sys.stdin:
         # this IF-switch only works because Hadoop sorts map output
         # by key (here: word) before it is passed to the reducer
         if current_key == key:
-            if label == "heathrowdata.txt":
+            if label == "wickairportdata.txt":
                 current_value = current_value + '|' + value
-            elif label == "wickairportdata.txt":
+            elif label == "heathrowdata.txt":
                 current_value = value + '|' + current_value
         else:
             if current_key:

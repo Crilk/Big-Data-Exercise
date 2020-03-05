@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import sys
+import os
 
+filepath = os.environ["map_input_file"]
+filename = os.path.split(filepath)[-1]
 # input comes from STDIN (standard input)
 for line in sys.stdin:
     # remove leading and trailing whitespace
@@ -11,4 +14,4 @@ for line in sys.stdin:
         key = words[index * 5] + '-' + words[index * 5 + 1]
         value = words[index * 5 + 2] + '-' + words[index * 5 + 3] + '-' + words[index * 5 + 4]
 
-        print('%s\t%s' % (key, value))
+        print('%s\t%s\t%s' % (key, value, filename))
